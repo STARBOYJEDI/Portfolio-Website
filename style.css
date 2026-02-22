@@ -53,18 +53,40 @@ ul {
     margin-top: 10px;         /*👉adds a small 10px gap from the top, matching the left side.👈*/
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+    margin: 10px;
+}
 
-
-
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    /*👉lets columns stack before overlapping👈*/
+    margin: 50px;
+    gap: 2rem;
+}
 
 .content-right {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  /*👉centers children horizontally (but since flex-direction is column, this actually centers them vertically).👈*/
+    align-items: center;      /*👉centers children horizontally within the column.👈*/
+    flex-direction: column;   /*👉stacks children vertically on top of each other.👈*/
+    flex: 1;                  /*👉makes the element grow and fill any remaining available space in its parent flex container.👈*/
+    min-width: 300px;         /*👉prevents the element from shrinking below 300px wide, useful for responsiveness.👈*/
+}
+
+.content-left {
+    display: flex;
     flex-direction: column;
     flex: 1;
-    min-width: 300px; 
+    min-width: 280px;
+    justify-content: center;
+    margin-left: 0;
+    padding-left: 2rem;
 }
+
 img {
     max-width: 100%;
     height: auto;
