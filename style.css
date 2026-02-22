@@ -7,6 +7,73 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
 }
+
+.first-section {
+    background-color: #1f2937;
+}
+
+#header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    color: #f9faf8;
+    margin: 10px;
+}
+
+.navbar {
+    display: flex;                  /*👉Turns into flex items👈*/
+    justify-content: space-between; /*👉spreads the children items evenly👈*/
+    flex-direction: row;            /*👉arranges children horizontally (left to right)👈*/
+}
+
+ul {
+    display: flex;
+    flex-direction: row;    /*👉arranges children horizontally (left to right)👈*/
+    list-style-type: none;  /*👉removes bullet points👈*/
+}
+
+.navbar-left {
+    display: flex;
+    width: 50%;         /*👉makes element take up 50% of the space👈*/
+    margin-left: 95px;  /*👉pushes the element to the left👈*/
+    margin-top: 10px;   /*👉adds a small 10px gap from the top👈*/
+}
+
+.navbar-right {
+    display: flex;
+    width: 50%;               /*👉takes up the other half of the navbar (paired with .navbar-left which also has width: 50%).👈*/
+    justify-content: center;  /*👉centers the children horizontally within this half.👈*/
+    align-items: center;      /*👉centers the children vertically.👈*/
+    margin-top: 10px;         /*👉adds a small 10px gap from the top, matching the left side.👈*/
+}
+
+
+
+
+
+.content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px; 
+}
+img {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 1;
+    margin-left: 200px;
+}
+
+
+
+
+
+
