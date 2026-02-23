@@ -79,20 +79,47 @@ h1 {
 
 .content-left {
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    min-width: 280px;
-    justify-content: center;
-    margin-left: 0;
-    padding-left: 2rem;
+    flex-direction: column; /*👉stacks children vertically👈*/
+    flex: 1;                /*👉grows to fill available space👈*/
+    min-width: 280px;       /*👉prevents it from shrinking below 280px wide, useful for responsiveness.👈*/
+    justify-content: center; /*👉centers children vertically along the column👈*/
+    margin-left: 0;          /*👉explicitly removes any left margin (likely overriding a default or inherited value).👈*/
+    padding-left: 2rem;     /*👉adds inner spacing on the left side, pushing the content slightly away from the edge.👈*/
 }
 
 img {
     max-width: 100%;
-    height: auto;
-    flex-shrink: 1;
-    margin-left: 200px;
+    margin-left: 350px;
+    width: 400px;
+    height: 400px;
+/*👉    object-fit: cover;👈*/
+/*👉    flex-shrink: 1;👈*/
+/*👉    flex-grow: 1;👈*/
+    border: 2px solid #3882f6;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
+
+.projects {
+    background-color: #3882f6;
+    color: white;
+    width: 90px;
+    height: 30px;
+    border: 1px solid #3882f6;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.linkedin {
+    background-color: #e5e7eb;
+    color: black;
+    width: 90px;
+    height: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
 
 
 
